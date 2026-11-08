@@ -1,0 +1,12 @@
+name: spike-s05
+on:
+  workflow_dispatch:
+    inputs:
+      who:
+        description: who dispatched
+        required: false
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo dispatched
