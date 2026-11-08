@@ -1,0 +1,7 @@
+name: spike-s07
+on: push
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "pushed ${{ github.ref }}"
